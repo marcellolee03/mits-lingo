@@ -1,0 +1,22 @@
+[project]
+name = "mits-lingo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Marcello Lee", email = "marcellolee03@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.162.2",
+    "isort>=9.0.2",
+    "sqlalchemy>=2.1.8",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+# app, não biblioteca: não precisamos empacotar/instalar o projeto no venv
+package = false
